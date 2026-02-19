@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="resources\styles\index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>TideMovies</title>
+</head>
+<body>
+    <form action = "#">
+    <h1>TideMovies</h1>
+        <input type="title" id ="title" required placeholder="Movie Name">
+        <input type="rating" id = "rating" required placeholder="Rating 1-10">
+        <input type="date" id = "date" required placeholder="Release Date DD/M/YY">
+        <button type ="submit" id = "btn">Add Movie</button>
+        <button type ="Sort" onclick="sortTable()">Sort Table (Ascending)</button>
+    </form> 
+
+   <section class="MovieTable">
+    <section class="table-section">
+        <div>Title</div>
+        <div>Date of Release</div>
+        <div>Rating</div>
+        <div>Favorite</div>
+        <div> Delete Entry </div>
+    </section>
+
+    <section id="Movie-List"></section>
+</section>
+    
+<script src="resources/scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
